@@ -1,0 +1,46 @@
+{
+  "name": "@provokke/catalogue-sync-pipeline",
+  "version": "0.1.0",
+  "description": "Supplier feed (CSV/JSON/HTML) to Shopify catalogue sync: pluggable adapters, normalise, diff, batched push, checkpoint/resume, robots-aware rate-limited fetcher.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Provokke/catalogue-sync-pipeline.git"
+  },
+  "author": "Provokke <josh@provokke.com>",
+  "files": [
+    "dist",
+    "!dist/demo"
+  ],
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "demo": "npm run build && node dist/demo/main.js",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^2.0.0"
+  }
+}
