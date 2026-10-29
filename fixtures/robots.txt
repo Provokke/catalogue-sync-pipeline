@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /private/
+Allow: /private/public-feed
+Crawl-delay: 1
+
+User-agent: badbot
+Disallow: /

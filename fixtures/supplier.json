@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "sku": "JSON-001", "name": "Oak Cutting Board", "price": 32.5, "qty": 12, "brand": "Birchwood" },
+    { "sku": "JSON-002", "name": "Copper Kettle", "price": "58.00", "qty": 4, "brand": "Birchwood" },
+    { "sku": "JSON-003", "name": "", "price": 10, "qty": 1, "brand": "Birchwood" },
+    { "sku": "CSV-004", "name": "Beeswax Candle (alt listing)", "price": 9.25, "qty": 20, "brand": "Birchwood" }
+  ]
+}

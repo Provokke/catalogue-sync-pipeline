@@ -1,0 +1,7 @@
+sku,title,price,stock,vendor
+CSV-001,Ceramic Mug,12.50,40,Acme Supply
+CSV-002,"Steel Bottle, 750ml",24.00,15,Acme Supply
+CSV-003,Linen Tote,not-a-price,8,Acme Supply
+CSV-001,Ceramic Mug (duplicate row),13.00,5,Acme Supply
+,Missing SKU Item,9.99,3,Acme Supply
+CSV-004,Beeswax Candle,8.75,60,Acme Supply
