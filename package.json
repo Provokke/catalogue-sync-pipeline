@@ -1,16 +1,17 @@
 {
   "name": "@provokke/catalogue-sync-pipeline",
-  "version": "0.1.0",
-  "description": "Supplier feed (CSV/JSON/HTML) to Shopify catalogue sync: pluggable adapters, normalise, diff, batched push, checkpoint/resume, robots-aware rate-limited fetcher.",
+  "version": "0.3.0",
+  "description": "Sync product catalogues from suppliers into Shopify with diffing, checkpoints and pluggable adapters",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Provokke/catalogue-sync-pipeline.git"
   },
-  "author": "Provokke <josh@provokke.com>",
+  "author": "Provokke",
   "files": [
     "dist",
-    "!dist/demo"
+    "README.md",
+    "LICENSE"
   ],
   "exports": {
     "./*": {
@@ -42,5 +43,13 @@
     "typescript": "^5.5.0",
     "typescript-eslint": "^8.0.0",
     "vitest": "^2.0.0"
-  }
+  },
+  "keywords": [
+    "shopify",
+    "catalogue",
+    "sync",
+    "pipeline",
+    "etl",
+    "suppliers"
+  ]
 }
